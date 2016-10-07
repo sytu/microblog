@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' /> <!-- 显示引用的变量, 即res.render 函数第二个参数传入的对象的属性。 -->
+  </head>
+  <body>
+  	<% items.forEach(function(item){ %><% include listitem %><% }) %> <!--把items数组里的每一个元素(item)传入进listitem.ejs并替换其中的item-->
+  </body>
+</html>

@@ -1,0 +1,90 @@
+/*body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+*/
+
+/*.row {
+	text-align: center;
+}*/
+/*.navbar-fixed-top{
+	background-color: black;
+}*/
+
+.form-control {
+	margin-left: 15px;
+}
+
+.help-block {
+  padding-left: 17%;
+  /*padding-bottom: 10px;*/
+}
+
+.span4 h2 {
+	text-align: left;
+}
+
+.span4 p {
+	text-align: left;
+}
+
+footer{
+    clear: both;
+	background: #f6f6f6;
+	margin-top: 20px;
+	padding: 10px 0;
+	color: #999;
+	text-align: center;
+}
+
+div.form-group {
+	margin-bottom: 10px;
+}
+
+div.form-group button {
+	/*float: ;*/
+	margin-left: 29%;
+	/*margin-top: 10px;*/
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+button.btn.btn-success {
+	/*background-color: black;*/
+	float:left；
+	margin-right:60px;
+}
+
+input.col-sm-8.col-sm-offset-1 {
+	/*background-color: black;*/
+	width: 300px;
+}
+
+
+
+/*div .col-sm-offset-2 {   //zhu ce div
+	background: #f6f6f6;
+	margin-right: 66%;
+	margin-left: 15%;
+}*/
+
+/*button.btn.btn-primary {
+	text-align: right;
+	margin-right: 50px;
+}*/
+
+/*div .col-sm-4 {
+	display: inline;
+	float: left;	
+}*/
+
+/*div.row {
+	float: left;
+	background-color: black;
+}*/

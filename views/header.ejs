@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+      <title><%= title %> - Microblog</title>
+      <link rel='stylesheet' href='/stylesheets/bootstrap.css' /> 
+      <!-- <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />  -->
+      <style type="text/css">
+        body {
+          padding-top: 60px;
+          padding-bottom: 40px;
+        } 
+      </style>
+      <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet"> 
+      <link href="stylesheets/style.css" rel="stylesheet"> 
+    </head>
+    <body>
+
+      <div class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar-inverse 为添加的因为新版本默认导航栏为白色 -->
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/">SytuBlog</a>
+            <div class="nav-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">首页</a></li>
+                <% if(!user) {%>   <!-- 这里的逻辑还要再看一下    如果user 未登录 则 true--> 
+                <li><a href="/login">登入</a></li>   <!-- 这里的user使用的是 app.js 中的res.locals.user 吧 -->
+                <li><a href="/reg">注册</a></li>
+                <% } else {%>    <!-- 否 -->
+                <li><a href="/logout">登出</a></li>
+                <% } %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="container" class="container">
+        <% if (success) { %>
+          <div class="alert alert-success">
+            <%= success %> <!-- <p>hahaaha</p> -->
+          </div>
+        <% } %>
+        <% if (error) { %>
+          <div class="alert alert-danger">
+            <%= error %>  <!-- <p>hahaaha</p> -->
+          </div>
+        <% } %>
